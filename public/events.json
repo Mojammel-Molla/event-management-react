@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "image": "https://i.ibb.co/W3FjKPt/wedding-event.webp",
+    "title": "Wedding Planning",
+    "description": "Comprehensive wedding planning, from concept to execution, tailored to your needs.",
+    "price": "$2,500",
+    "details": "Our wedding planning service covers every aspect of your special day, from ideation to execution. We work closely with you to understand your vision and customize the wedding to your preferences, ensuring a memorable and stress-free experience."
+  },
+  {
+    "id": "2",
+    "image": "https://i.ibb.co/F6ywT92/birthday-party-event.jpg",
+    "title": "Birthday Party Planning",
+    "description": "Create unforgettable birthday celebrations for all ages with our expert planning services.",
+    "price": "$800 - $2,500",
+    "details": "Celebrate birthdays in style with our party planning services. We provide everything you need to create a memorable birthday experience, from themed decorations to entertainment and delicious cake."
+  },
+  {
+    "id": "3",
+    "image": "https://i.ibb.co/8rfByKM/aniversery-party.jpg",
+    "title": "Anniversary Celebration",
+    "description": "Celebrate your love story with a beautifully organized anniversary event.",
+    "price": "$1,000 - $3,000",
+    "details": "Make your anniversary truly special with our celebration services. We handle all the details, from venue setup and catering to entertainment, so you can focus on celebrating your love."
+  },
+  {
+    "id": "4",
+    "image": "https://i.ibb.co/6n0sVSD/vanue-rental.jpg",
+    "title": "Venue Rental",
+    "description": "Access to our exclusive event venues for weddings, birthdays, and anniversaries.",
+    "price": "$1,000 - $5,000",
+    "details": "Choose from our diverse range of exclusive event venues, each offering a unique ambiance and accommodating various celebrations. Our venues are equipped with all the facilities you need for a successful event."
+  },
+  {
+    "id": "5",
+    "image": "https://i.ibb.co/djrh8h1/catering-events.jpg",
+    "title": "Custom Catering",
+    "description": "Delicious catering options to satisfy your guests at weddings, birthdays, and anniversaries.",
+    "price": "$20 - $50 per person",
+    "details": "Savor the flavors of our delectable catering options, crafted to delight your guests' palates at weddings, birthdays, and anniversaries. We offer a diverse menu that caters to various tastes."
+  },
+  {
+    "id": "6",
+    "image": "https://i.ibb.co/wpBWK9C/photgraphy-event.jpg",
+    "title": "Event Photography",
+    "description": "Capture every moment with professional photography services for weddings, birthdays, and anniversaries.",
+    "price": "$1,200 - $3,000",
+    "details": "Preserve the precious moments of your event with our expert photography services, ensuring lasting memories for your weddings, birthdays, and anniversaries."
+  },
+  {
+    "id": "7",
+    "image": "https://i.ibb.co/sj71rCH/corporete-events.webp",
+    "title": "Corporate Event Planning",
+    "description": "Professional planning services for corporate events, conferences, and seminars.",
+    "price": "$3,000 - $10,000",
+    "details": "Plan and execute successful corporate events with our expert services. From venue selection to program coordination, we ensure that your corporate event runs smoothly and professionally."
+  },
+  {
+    "id": "8",
+    "image": "https://i.ibb.co/47msbj3/baby-shower.webp",
+    "title": "Baby Shower Planning",
+    "description": "Create a memorable baby shower event to celebrate the upcoming arrival of a new family member.",
+    "price": "$600 - $1,500",
+    "details": "Celebrate the joy of a new baby with our baby shower planning services. We take care of all the details, from decorations to games, so you can focus on enjoying this special occasion."
+  },
+  {
+    "id": "9",
+    "image": "https://i.ibb.co/tBD5mk9/Graduation-Party.jpg",
+    "title": "Graduation Party Planning",
+    "description": "Plan a memorable graduation party to celebrate academic achievements.",
+    "price": "$800 - $2,000",
+    "details": "Celebrate academic milestones with our graduation party planning services. We provide everything you need to host a memorable party, including venue decoration, catering, and entertainment."
+  },
+  {
+    "id": "10",
+    "image": "https://i.ibb.co/kQ7M4nh/retirement-party.webp",
+    "title": "Retirement Party Planning",
+    "description": "Organize a retirement celebration to honor years of dedication and hard work.",
+    "price": "$800 - $1,800",
+    "details": "Celebrate the retirement of a valued colleague with our retirement party planning services. We handle all the arrangements, allowing you to show your appreciation and best wishes."
+  },
+  {
+    "id": "11",
+    "image": "https://i.ibb.co/SdGHMg3/holiday-party.webp",
+    "title": "Holiday Party Planning",
+    "description": "Plan festive holiday parties for your company or social group.",
+    "price": "$600 - $2,000",
+    "details": "Spread holiday cheer with our holiday party planning services. We create a festive atmosphere with decorations, catering, and entertainment, making your holiday event truly special."
+  },
+  {
+    "id": "12",
+    "image": "https://i.ibb.co/S0BmTRy/fundriser-event.webp",
+    "title": "Charity Fundraiser Planning",
+    "description": "Organize successful charity fundraisers to support important causes.",
+    "price": "Custom Quote",
+    "details": "Make a positive impact with our charity fundraiser planning services. We'll help you create impactful fundraising events that support important causes and make a difference in your community."
+  }
+]
