@@ -5,7 +5,12 @@
     "title": "Wedding Planning",
     "description": "Comprehensive wedding planning, from concept to execution, tailored to your needs.",
     "price": "$2,500",
-    "details": "Our wedding planning service covers every aspect of your special day, from ideation to execution. We work closely with you to understand your vision and customize the wedding to your preferences, ensuring a memorable and stress-free experience."
+    "details": "Our wedding planning service covers every aspect of your special day, from ideation to execution. We work closely with you to understand your vision and customize the wedding to your preferences, ensuring a memorable and stress-free experience.",
+    "service_points": [
+      "Full-service wedding planning",
+      "Venue selection assistance",
+      "Theme and decor customization"
+    ]
   },
   {
     "id": "2",
@@ -13,7 +18,12 @@
     "title": "Birthday Party Planning",
     "description": "Create unforgettable birthday celebrations for all ages with our expert planning services.",
     "price": "$1200 ",
-    "details": "Celebrate birthdays in style with our party planning services. We provide everything you need to create a memorable birthday experience, from themed decorations to entertainment and delicious cake."
+    "details": "Celebrate birthdays in style with our party planning services. We provide everything you need to create a memorable birthday experience, from themed decorations to entertainment and delicious cake.",
+    "service_points": [
+      "Themed decorations",
+      "Entertainment options",
+      "Cake and catering services"
+    ]
   },
   {
     "id": "3",
@@ -21,7 +31,12 @@
     "title": "Anniversary Celebration",
     "description": "Celebrate your love story with a beautifully organized anniversary event.",
     "price": "$1,500",
-    "details": "Make your anniversary truly special with our celebration services. We handle all the details, from venue setup and catering to entertainment, so you can focus on celebrating your love."
+    "details": "Make your anniversary truly special with our celebration services. We handle all the details, from venue setup and catering to entertainment, so you can focus on celebrating your love.",
+    "service_points": [
+      "Venue decoration",
+      "Catering with a romantic touch",
+      "Entertainment for couples"
+    ]
   },
   {
     "id": "4",
@@ -29,7 +44,12 @@
     "title": "Venue Rental",
     "description": "Access to our exclusive event venues for weddings, birthdays, and anniversaries.",
     "price": "$3,000",
-    "details": "Choose from our diverse range of exclusive event venues, each offering a unique ambiance and accommodating various celebrations. Our venues are equipped with all the facilities you need for a successful event."
+    "details": "Choose from our diverse range of exclusive event venues, each offering a unique ambiance and accommodating various celebrations. Our venues are equipped with all the facilities you need for a successful event.",
+    "service_points": [
+      "Indoor and outdoor venue options",
+      "Flexible seating arrangements",
+      "Audiovisual equipment available"
+    ]
   },
   {
     "id": "5",
@@ -37,7 +57,12 @@
     "title": "Custom Catering",
     "description": "Delicious catering options to satisfy your guests at weddings, birthdays, and anniversaries.",
     "price": "$5,000",
-    "details": "Savor the flavors of our delectable catering options, crafted to delight your guests' palates at weddings, birthdays, and anniversaries. We offer a diverse menu that caters to various tastes."
+    "details": "Savor the flavors of our delectable catering options, crafted to delight your guests' palates at weddings, birthdays, and anniversaries. We offer a diverse menu that caters to various tastes.",
+    "service_points": [
+      "Customizable menu",
+      "Vegetarian and vegan options",
+      "Professional catering staff"
+    ]
   },
   {
     "id": "6",
@@ -45,7 +70,12 @@
     "title": "Event Photography",
     "description": "Capture every moment with professional photography services for weddings, birthdays, and anniversaries.",
     "price": "$1,000",
-    "details": "Preserve the precious moments of your event with our expert photography services, ensuring lasting memories for your weddings, birthdays, and anniversaries."
+    "details": "Preserve the precious moments of your event with our expert photography services, ensuring lasting memories for your weddings, birthdays, and anniversaries.",
+    "service_points": [
+      "High-resolution photos",
+      "Full event coverage",
+      "Photo album and digital copies"
+    ]
   },
   {
     "id": "7",
@@ -53,7 +83,12 @@
     "title": "Corporate Event Planning",
     "description": "Professional planning services for corporate events, conferences, and seminars.",
     "price": "$10,000",
-    "details": "Plan and execute successful corporate events with our expert services. From venue selection to program coordination, we ensure that your corporate event runs smoothly and professionally."
+    "details": "Plan and execute successful corporate events with our expert services. From venue selection to program coordination, we ensure that your corporate event runs smoothly and professionally.",
+    "service_points": [
+      "Corporate meeting planning",
+      "Conference logistics",
+      "Team-building activities"
+    ]
   },
   {
     "id": "8",
@@ -61,7 +96,12 @@
     "title": "Baby Shower Planning",
     "description": "Create a memorable baby shower event to celebrate the upcoming arrival of a new family member.",
     "price": "$600",
-    "details": "Celebrate the joy of a new baby with our baby shower planning services. We take care of all the details, from decorations to games, so you can focus on enjoying this special occasion."
+    "details": "Celebrate the joy of a new baby with our baby shower planning services. We take care of all the details, from decorations to games, so you can focus on enjoying this special occasion.",
+    "service_points": [
+      "Themed baby shower decor",
+      "Games and activities",
+      "Baby-friendly catering"
+    ]
   },
   {
     "id": "9",
@@ -69,7 +109,12 @@
     "title": "Graduation Party Planning",
     "description": "Plan a memorable graduation party to celebrate academic achievements.",
     "price": "$2,000",
-    "details": "Celebrate academic milestones with our graduation party planning services. We provide everything you need to host a memorable party, including venue decoration, catering, and entertainment."
+    "details": "Celebrate academic milestones with our graduation party planning services. We provide everything you need to host a memorable party, including venue decoration, catering, and entertainment.",
+    "service_points": [
+      "Themed graduation decor",
+      "Dance floor and music",
+      "Customized graduation cake"
+    ]
   },
   {
     "id": "10",
@@ -77,7 +122,12 @@
     "title": "Retirement Party Planning",
     "description": "Organize a retirement celebration to honor years of dedication and hard work.",
     "price": "$1,800",
-    "details": "Celebrate the retirement of a valued colleague with our retirement party planning services. We handle all the arrangements, allowing you to show your appreciation and best wishes."
+    "details": "Celebrate the retirement of a valued colleague with our retirement party planning services. We handle all the arrangements, allowing you to show your appreciation and best wishes.",
+    "service_points": [
+      "Retirement-themed decor",
+      "Speeches and recognition",
+      "Farewell gifts and keepsakes"
+    ]
   },
   {
     "id": "11",
@@ -85,7 +135,12 @@
     "title": "Holiday Party Planning",
     "description": "Plan festive holiday parties for your company or social group.",
     "price": "$800 - ",
-    "details": "Spread holiday cheer with our holiday party planning services. We create a festive atmosphere with decorations, catering, and entertainment, making your holiday event truly special."
+    "details": "Spread holiday cheer with our holiday party planning services. We create a festive atmosphere with decorations, catering, and entertainment, making your holiday event truly special.",
+    "service_points": [
+      "Holiday-themed decor",
+      "Festive catering and drinks",
+      "Entertainment and activities"
+    ]
   },
   {
     "id": "12",
@@ -93,6 +148,11 @@
     "title": "Charity Fundraiser Planning",
     "description": "Organize successful charity fundraisers to support important causes.",
     "price": "$399",
-    "details": "Make a positive impact with our charity fundraiser planning services. We'll help you create impactful fundraising events that support important causes and make a difference in your community."
+    "details": "Make a positive impact with our charity fundraiser planning services. We'll help you create impactful fundraising events that support important causes and make a difference in your community.",
+    "service_points": [
+      "Fundraising strategy development",
+      "Donor engagement planning",
+      "Event promotion and marketing"
+    ]
   }
 ]

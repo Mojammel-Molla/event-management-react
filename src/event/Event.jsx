@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Event = ({ event }) => {
-  console.log(event);
-  const { id, title, image, price, description } = event;
+  const { id, title, image, price, description } = event || {};
   return (
     <div>
       <div className=" card md:w-96 md:h-96 lg:w-96 lg:h-96 bg-base-100 pt-5 shadow-xl">
