@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Event = ({ event }) => {
   console.log(event);
   const { id, title, image, price, description } = event;
   return (
     <div>
-      <div className="card md:w-96 md:h-96 lg:w-96 lg:h-96 bg-base-100 pt-5 shadow-xl">
+      <div className=" card md:w-96 md:h-96 lg:w-96 lg:h-96 bg-base-100 pt-5 shadow-xl">
         <figure>
           <img className=" md:h-60 md:w-80 lg:h-96 lg:w-96" src={image} />
         </figure>
@@ -14,7 +15,11 @@ const Event = ({ event }) => {
           <p className="text-base">{description}</p>
           <div className="card-actions flex justify-between">
             <p className="text-md font-semibold">Price:{price}</p>
-            <button className="text-lg font-bold">Details</button>
+            <Link to={`/event/${id}`}>
+              <button className="text-lg font-bold text-amber-900">
+                Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>

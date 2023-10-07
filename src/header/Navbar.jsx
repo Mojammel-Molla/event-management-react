@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FiUserPlus } from 'react-icons/fi';
+import UserImage from '../assets/userImage.jpg';
 const Navbar = () => {
   const navLinks = (
     <>
@@ -16,10 +15,10 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 mt-5">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -42,16 +41,20 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className=" font-black lg:text-2xl">Event Paradise</a>
+        <a className=" font-extrabold text-amber-900 lg:text-4xl">
+          Event Paradise
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <img src={FiUserPlus} />
+        <img className="w-9 h-9 mr-2 rounded-full" src={UserImage} />
 
-        <Link>
-          <button className="btn btn-primary">Log in</button>
+        <Link to="/login">
+          <button className="text-white bg-amber-800 px-4 py-1 rounded-md">
+            Log in
+          </button>
         </Link>
       </div>
     </div>
