@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "rating": 5,
+    "date": "2023-03-15",
+    "comment": "EventMasters did an exceptional job planning our wedding. Every detail was perfectly executed, and the day was magical. We couldn't be happier!",
+    "profile_picture": "https://i.ibb.co/RgRg25H/alice-Jhonson.jpg"
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "rating": 4,
+    "date": "2023-02-28",
+    "comment": "EventMasters organized our company's annual conference flawlessly. Their professionalism and attention to detail were impressive.",
+    "profile_picture": "https://i.ibb.co/wgRXPjs/jhon-Smith.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Emily Davis",
+    "rating": 4.5,
+    "date": "2023-02-10",
+    "comment": "I had the pleasure of using EventMasters for my daughter's sweet sixteen party. It was a blast, and the kids had so much fun. Thank you!",
+    "profile_picture": "https://i.ibb.co/tZ3L2Rw/emily-Devis.jpg"
+  },
+  {
+    "id": 4,
+    "name": "David Brown",
+    "rating": 4,
+    "date": "2023-01-25",
+    "comment": "EventMasters made our anniversary celebration truly special. The decorations and entertainment were perfect.",
+    "profile_picture": "https://i.ibb.co/NZyGLdK/david-Brown.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Clark",
+    "rating": 3.5,
+    "date": "2023-01-15",
+    "comment": "I can't thank EventMasters enough for the incredible job they did with my baby shower. It was exactly as I had imagined.",
+    "profile_picture": "https://i.ibb.co/nmznPNV/sophie-Clerk.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Michael White",
+    "rating": 5,
+    "date": "2022-12-05",
+    "comment": "EventMasters helped us with our holiday party, and it was a huge success. The staff was courteous and efficient.",
+    "profile_picture": "https://i.ibb.co/RyQzdzz/michael-White.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Green",
+    "rating": 4,
+    "date": "2022-11-20",
+    "comment": "We used EventMasters for a charity fundraiser, and it exceeded our expectations. The event raised more funds than ever before.",
+    "profile_picture": "https://i.ibb.co/4Pf4sHq/olivia-Green.jpg"
+  },
+  {
+    "id": 8,
+    "name": "William Turner",
+    "rating": 5,
+    "date": "2022-11-05",
+    "comment": "EventMasters made our retirement party truly memorable. It was a heartfelt farewell.",
+    "profile_picture": "https://i.ibb.co/9cLn700/william-Turner.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ava Martinez",
+    "rating": 4,
+    "date": "2022-10-15",
+    "comment": "We hired EventMasters for our corporate event, and they handled everything seamlessly. It was a great success.",
+    "profile_picture": "https://i.ibb.co/mRMDxtq/ava-Martinez.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Ethan Harris",
+    "rating": 4,
+    "date": "2022-09-30",
+    "comment": "EventMasters provided excellent event coordination for our product launch. Their expertise made the event run smoothly.",
+    "profile_picture": "https://i.ibb.co/JRHgNXc/ethan-Harris.jpg"
+  }
+]

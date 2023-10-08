@@ -9,6 +9,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from 'firebase/auth';
 import app from '../firebase/Firebase.config';
 
@@ -39,6 +40,9 @@ const AuthProvider = ({ children }) => {
   const handleGithubLogIn = () => {
     return signInWithPopup(auth, githubProvider);
   };
+  const handleUserProfile = () => {
+    return updateProfile(auth, user);
+  };
 
   // User Observer
   useEffect(() => {
@@ -58,6 +62,7 @@ const AuthProvider = ({ children }) => {
     logOut,
     handleGoogleLogIn,
     handleGithubLogIn,
+    handleUserProfile,
   };
   return (
     <div>

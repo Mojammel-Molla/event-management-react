@@ -14,8 +14,8 @@ const EventDetail = () => {
   }, [id, events]);
   return (
     <div>
-      <h1 className="text-amber-500 text-center text-4xl underline font-bold md:mb-5 lg:my-10">
-        Event Details
+      <h1 className="text-amber-700 text-center text-4xl  font-bold md:mb-5 lg:my-10">
+        Your event_Your way
       </h1>
       <div className="card card-side sm:h-[60vh] shadow-2xl  ">
         <figure>

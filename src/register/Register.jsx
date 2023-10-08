@@ -16,7 +16,7 @@ const Register = () => {
     const check = form.get('check');
     console.log(name, photo, email, password, check);
 
-    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,13}$/.test(password)) {
+    if (!/^(?=.*?[#?!@$%^&*-])(?=.*[a-z])(?=.*[A-Z]).{6,13}$/.test(password)) {
       alert('Your password is too short');
       return;
     } else if (!check) {

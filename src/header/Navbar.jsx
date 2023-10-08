@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProvider';
 import PrivateRoute from '../privateRoute/PrivateRoute';
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, handleUserProfile } = useContext(AuthContext);
   console.log(user);
   const navLinks = (
     <>
@@ -39,6 +39,8 @@ const Navbar = () => {
         console.log('Find an error of', err);
       });
   };
+
+  handleUserProfile(user);
   return (
     <div className="navbar bg-base-100 mt-5">
       <div className="navbar-start">
