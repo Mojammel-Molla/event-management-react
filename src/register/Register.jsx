@@ -1,7 +1,7 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
-
+// import { ToastContainer, toast } from 'react-toastify';
 const Register = () => {
   const [show, setShow] = useState(false);
   const { createUser } = useContext(AuthContext);
@@ -15,15 +15,24 @@ const Register = () => {
     const password = form.get('password');
     const check = form.get('check');
     console.log(name, photo, email, password, check);
-    createUser(email, password)
-      .then(res => {
-        console.log(res.user);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  };
 
+    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,13}$/.test(password)) {
+      alert('Your password is too short');
+      return;
+    } else if (!check) {
+      alert('Accept our terms and conditions');
+      return;
+    } else {
+      createUser(email, password)
+        .then(res => {
+          console.log(res.user);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      alert('user created successfully');
+    }
+  };
   return (
     <div className=" md:w-3/4 lg:w-2/4 mx-auto border rounded-md lg:mt-12 ">
       <form onSubmit={handleRegister} className="card-body">
@@ -75,12 +84,12 @@ const Register = () => {
             required
           />
           <div className="bg-slate-500">
-            <p
+            <span
               onClick={() => setShow(!show)}
               className="absolute sm:right-[15%] sm:bottom-[37%]  md:right-[31%] md:bottom-[37%] lg:right-[36%] lg:top-[53%]"
             >
               {show ? 'Hide' : 'Show'}
-            </p>
+            </span>
           </div>
           <label className="my-4">
             <input type="checkbox" name="check" />
@@ -102,5 +111,4 @@ const Register = () => {
     </div>
   );
 };
-
 export default Register;

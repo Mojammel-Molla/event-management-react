@@ -1,6 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 import UserImage from '../assets/userImage.jpg';
+import { useContext } from 'react';
+import { AuthContext } from '../providers/AuthProvider';
+import PrivateRoute from '../privateRoute/PrivateRoute';
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
   const navLinks = (
     <>
       <li>
@@ -9,11 +14,31 @@ const Navbar = () => {
       <li>
         <NavLink to="reviews">Reviews</NavLink>
       </li>
-      <li>
-        <NavLink to="about">About Us</NavLink>
-      </li>
+
+      {user ? (
+        <>
+          <li>
+            <NavLink to="/bookings">Bookings</NavLink>
+          </li>
+          <li>
+            <NavLink to="about">About Us</NavLink>
+          </li>
+        </>
+      ) : (
+        ''
+      )}
     </>
   );
+
+  const handleLogOut = () => {
+    logOut()
+      .then(res => {
+        console.log('User log out successfully', res.user);
+      })
+      .catch(err => {
+        console.log('Find an error of', err);
+      });
+  };
   return (
     <div className="navbar bg-base-100 mt-5">
       <div className="navbar-start">
@@ -42,20 +67,33 @@ const Navbar = () => {
           </ul>
         </div>
         <a className=" font-extrabold text-amber-900 lg:text-4xl">
-          Event Paradise
+          <span className="text-amber-500">Event</span> Paradise
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <img className="w-9 h-9 mr-2 rounded-full" src={UserImage} />
+        {user ? (
+          <img className="w-9 h-9 mr-2 rounded-full" src={user?.photoURL} />
+        ) : (
+          <img className="w-9 h-9 mr-2 rounded-full" src={UserImage} />
+        )}
 
-        <Link to="/login">
-          <button className="text-white bg-amber-800 px-4 py-1 rounded-md">
-            Log in
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="text-white bg-amber-800 px-4 py-1 rounded-md"
+          >
+            Log out
           </button>
-        </Link>
+        ) : (
+          <Link to="/login">
+            <button className="text-white bg-amber-800 px-4 py-1 rounded-md">
+              Log in
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

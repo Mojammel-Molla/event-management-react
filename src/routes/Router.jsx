@@ -8,6 +8,8 @@ import About from '../pages/About';
 import EventDetail from '../event/EventDetail';
 import LogIn from '../login/LogIn';
 import Register from '../register/Register';
+import PrivateRoute from '../privateRoute/PrivateRoute';
+import Bookings from '../pages/Bookings';
 
 const Router = createBrowserRouter([
   {
@@ -22,11 +24,19 @@ const Router = createBrowserRouter([
       },
       {
         path: '/reviews',
-        element: <Reviews></Reviews>,
+        element: (
+          <PrivateRoute>
+            <Reviews></Reviews>
+          </PrivateRoute>
+        ),
       },
       {
         path: '/about',
-        element: <About></About>,
+        element: (
+          <PrivateRoute>
+            <About></About>
+          </PrivateRoute>
+        ),
       },
       {
         path: '/login',
@@ -37,8 +47,20 @@ const Router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: '/bookings',
+        element: (
+          <PrivateRoute>
+            <Bookings></Bookings>
+          </PrivateRoute>
+        ),
+      },
+      {
         path: '/event/:id',
-        element: <EventDetail></EventDetail>,
+        element: (
+          <PrivateRoute>
+            <EventDetail></EventDetail>
+          </PrivateRoute>
+        ),
         loader: () => fetch('/events.json'),
       },
     ],
