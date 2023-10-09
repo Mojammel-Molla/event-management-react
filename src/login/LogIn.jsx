@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 import { FcGoogle } from 'react-icons/fc';
-import { ImFacebook2 } from 'react-icons/im';
 import { FaGithub } from 'react-icons/fa';
+import toast, { Toaster } from 'react-hot-toast';
 const LogIn = () => {
   const { user, signIn, handleGoogleLogIn, handleGithubLogIn } =
     useContext(AuthContext);
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
   const handleLogIn = e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -14,13 +17,20 @@ const LogIn = () => {
     const password = form.get('password');
     console.log(email, password);
 
-    signIn(email, password)
-      .then(res => {
-        console.log(res.user);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    if (!/^(?=.*?[#?!@$%^&*-])(?=.*[a-z])(?=.*[A-Z]).{6,32}$/.test(password)) {
+      toast.error('Your password is too short');
+      return;
+    } else {
+      signIn(email, password)
+        .then(res => {
+          console.log(res.user);
+          navigate(location?.state ? location.state : '/');
+        })
+        .catch(err => {
+          console.log(err);
+          return toast.error('Please provide a valid user!');
+        });
+    }
   };
 
   return (
@@ -72,14 +82,12 @@ const LogIn = () => {
             <FcGoogle></FcGoogle>
             Google
           </button>
-          {/* <button className="btn bg-blue-500 text-white  ">
-            <ImFacebook2></ImFacebook2> Facebook
-          </button> */}
           <button onClick={handleGithubLogIn} className="btn">
             <FaGithub></FaGithub> Github
           </button>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

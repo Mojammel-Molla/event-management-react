@@ -1,11 +1,11 @@
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
-// import { ToastContainer, toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 const Register = () => {
   const [show, setShow] = useState(false);
-  const { createUser } = useContext(AuthContext);
-
+  const { createUser, handleUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = e => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -20,17 +20,20 @@ const Register = () => {
       alert('Your password is too short');
       return;
     } else if (!check) {
-      alert('Accept our terms and conditions');
+      toast.error('Accept our terms and conditions');
       return;
     } else {
       createUser(email, password)
         .then(res => {
+          handleUserProfile(name, photo);
+
           console.log(res.user);
+          navigate('/');
         })
         .catch(err => {
           console.log(err);
         });
-      alert('user created successfully');
+      toast.success('User created successfully');
     }
   };
   return (
@@ -84,12 +87,12 @@ const Register = () => {
             required
           />
           <div className="bg-slate-500">
-            <span
+            {/* <span
               onClick={() => setShow(!show)}
               className="absolute sm:right-[15%] sm:bottom-[37%]  md:right-[31%] md:bottom-[37%] lg:right-[36%] lg:top-[53%]"
             >
               {show ? 'Hide' : 'Show'}
-            </span>
+            </span> */}
           </div>
           <label className="my-4">
             <input type="checkbox" name="check" />
@@ -108,6 +111,7 @@ const Register = () => {
           <button className="btn text-white bg-amber-800 ">Register</button>
         </div>
       </form>
+      <Toaster />
     </div>
   );
 };

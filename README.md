@@ -1,8 +1,19 @@
-# React + Vite
+Website name: Event Paradise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live website:
 
-Currently, two official plugins are available:
+- First of all in this website user can create account from register page user
+  can add custom picture also in profile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- When user is created it will show a nice alert.
+
+- If already have an account then you have to just log in carefully if user
+  password did not match it will show you an nice error.
+
+- User must have to be log in to experience the whole website view and routes.
+
+- If any user try to goes into private routes without login it will redirect to
+  the log in page.
+- There is also special feature for user after login user redirects to the as
+  user wanted page to visit
+- In the home page service item cards have an nice animation affect.

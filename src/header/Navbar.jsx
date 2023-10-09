@@ -15,11 +15,14 @@ const Navbar = () => {
         <NavLink to="reviews">Reviews</NavLink>
       </li>
 
+      <li>
+        <NavLink to="/bookings">Bookings</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Log in</NavLink>
+      </li>
       {user ? (
         <>
-          <li>
-            <NavLink to="/bookings">Bookings</NavLink>
-          </li>
           <li>
             <NavLink to="about">About Us</NavLink>
           </li>
@@ -40,7 +43,6 @@ const Navbar = () => {
       });
   };
 
-  handleUserProfile(user);
   return (
     <div className="navbar bg-base-100 mt-5">
       <div className="navbar-start">
@@ -77,10 +79,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <div className="md:flex-wrap justify-end">
-            <img className="w-9 h-9 mr-1  rounded-full " src={user?.photoURL} />
-
-            <h4 className="mr-2">{user?.displayName}</h4>
+          <div className="md:flex  mr-5">
+            <h4 className=" my-auto font-medium sm:text-sm">
+              {user?.displayName}
+            </h4>
+            <img className="w-9 h-9 ml-5  rounded-full " src={user?.photoURL} />
           </div>
         ) : (
           <img className="w-9 h-9 mr-2 rounded-full" src={UserImage} />
