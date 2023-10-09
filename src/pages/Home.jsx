@@ -3,14 +3,22 @@ import { useLoaderData } from 'react-router-dom';
 import Banner from '../banner/Banner';
 import Event from '../event/Event';
 import Contacts from './Contacts';
-
+import Marquee from 'react-fast-marquee';
+import Image1 from '../assets/sponsored1.jpeg';
+import Image2 from '../assets/sponsored2.png';
+import Image3 from '../assets/sponsored3.jpeg';
+import Image4 from '../assets/sponsored4.jpeg';
+import Image5 from '../assets/sponsored5.png';
+import Image6 from '../assets/sponsored6.jpeg';
+import Image7 from '../assets/sponsored7.png';
+import Image8 from '../assets/sponsored8.png';
 const Home = () => {
   const events = useLoaderData();
   console.log(events);
   return (
     <div>
       <h2 className="text-center text-amber-700 md:text-2xl lg:text-3xl font-bold mt-4 mb-2">
-        Our Latest Works
+        Some Latest Works
       </h2>
       <Banner></Banner>
       <h1 className="text-center text-amber-700 md:text-2xl lg:text-4xl font-bold my-4 ">
@@ -24,6 +32,19 @@ const Home = () => {
           <Event key={event.id} event={event}></Event>
         ))}
       </div>
+      <h1 className=" text-amber-700 text-center font-bold text-4xl my-5">
+        We Arrange Events For...
+      </h1>
+      <Marquee className="my-16" pauseOnHover={true}>
+        <img className="" src={Image3} alt="" />
+        <img className="" src={Image1} alt="" />
+        <img className="" src={Image2} alt="" />
+        <img className="" src={Image4} alt="" />
+        <img className="" src={Image5} alt="" />
+        <img className="" src={Image6} alt="" />
+        <img className="" src={Image7} alt="" />
+        <img className="" src={Image8} alt="" />
+      </Marquee>
       <Contacts></Contacts>
     </div>
   );

@@ -5,7 +5,12 @@ const Event = ({ event }) => {
   const { id, title, image, price, description } = event || {};
   return (
     <div>
-      <div className=" card md:w-96 md:h-96 lg:w-96 lg:h-96 bg-base-100 pt-5 shadow-xl">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className=" card md:w-96 md:h-96 lg:w-96 lg:h-96 bg-base-100 pt-5 shadow-xl"
+      >
         <figure>
           <img className=" md:h-60 md:w-80 lg:h-96 lg:w-96" src={image} />
         </figure>

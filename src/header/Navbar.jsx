@@ -68,7 +68,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className=" font-extrabold text-amber-900 lg:text-4xl">
+        <a className=" font-extrabold text-amber-900 sm:text-2xl lg:text-4xl">
           <span className="text-amber-500">Event</span> Paradise
         </a>
       </div>
@@ -77,7 +77,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <img className="w-9 h-9 mr-2 rounded-full" src={user?.photoURL} />
+          <div className="md:flex-wrap justify-end">
+            <img className="w-9 h-9 mr-1  rounded-full " src={user?.photoURL} />
+
+            <h4 className="mr-2">{user?.displayName}</h4>
+          </div>
         ) : (
           <img className="w-9 h-9 mr-2 rounded-full" src={UserImage} />
         )}

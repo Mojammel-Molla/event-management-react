@@ -72,9 +72,9 @@ const LogIn = () => {
             <FcGoogle></FcGoogle>
             Google
           </button>
-          <button className="btn bg-blue-500 text-white  ">
+          {/* <button className="btn bg-blue-500 text-white  ">
             <ImFacebook2></ImFacebook2> Facebook
-          </button>
+          </button> */}
           <button onClick={handleGithubLogIn} className="btn">
             <FaGithub></FaGithub> Github
           </button>

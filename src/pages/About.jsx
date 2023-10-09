@@ -4,13 +4,13 @@ const About = () => {
   return (
     <div>
       <div>
-        <h1 className="bg-amber-800 lg:text-3xl rounded-md font-semibold text-white text-center w-1/5 mx-auto p-2">
-          About Us
+        <h1 className="bg-amber-800 lg:text-3xl rounded-full font-semibold text-white text-center mt-5 w-1/5 mx-auto p-2">
+          Why us?
         </h1>
       </div>
-      <div className="max-w-6xl mx-auto mt-10 items-center justify-center text-center">
-        <h1 className=" text-amber-500 mb-5 text-5xl font-bold underline">
-          Our Goal
+      <div className="max-w-6xl mx-auto mt-5 items-center justify-center text-center">
+        <h1 className=" text-amber-500 mb-5 lg:text-5xl font-bold underline">
+          We Are On a Mission
         </h1>
         <p className="mb-5 text-lg text-amber-400 font-medium">
           At Event Paradise, we transform your dreams into remarkable
