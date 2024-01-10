@@ -17,7 +17,7 @@ const Register = () => {
     console.log(name, photo, email, password, check);
 
     if (!/^(?=.*?[#?!@$%^&*-])(?=.*[a-z])(?=.*[A-Z]).{6,32}$/.test(password)) {
-      alert('Your password is too short');
+      toast.error('Your password is too short');
       return;
     } else if (!check) {
       toast.error('Accept our terms and conditions');
